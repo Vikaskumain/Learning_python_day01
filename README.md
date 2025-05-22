@@ -1,4 +1,4 @@
-# 🐍 Python Input and Escape Sequences Demo
+# 🐍 Python day03 Input and Escape Sequences Demo
 
 This Python script demonstrates:
 
