@@ -1,63 +1,118 @@
-# Python Day 02 - Basic Operations
+# 🐍 Python Practice: Conditional Statements, Lists, Strings, and Tuples
 
-This script (`python_day_02.py`) demonstrates various fundamental operations in Python. It is designed for beginners to understand how different operators and data types work in Python.
+This code demonstrates basic Python concepts including:
 
----
-
-## 📁 Filename: `python_day_02.py`
-
-### ✅ Operations Covered:
-
-#### 🔢 Arithmetic Operators:
-- Addition: `a + b`
-- Subtraction: `a - b`
-- Multiplication: `a * b`
-- Division: `a / b`
-- Modulus: `a % b`
-- Floor Division: `a // b`
-- Exponentiation: `a ** b`
-
-#### 🔍 Comparison & Logical Operators:
-- Comparison (Equal): `a == b`
-- Logical AND: `a and b`
-- Ternary Operator: `a if a > b else b`
-
-#### 🧬 Identity & Bitwise Operators:
-- Identity: `a is b`
-- Bitwise AND: `a & b`
+- Conditional statements
+- List operations
+- String properties
+- Tuple behavior
 
 ---
 
-### 📚 Data Structure Operations:
+## ✅ Conditional Statements
 
-#### 🧵 String Operations:
-- Concatenation: `a + b`
-- Formatting: `"{} {}".format(a, b)`
-- Repetition: `a * b`
-- Slicing: `a[0:5]`
-- Length: `len(a)`
-- Count: `a.count("o")`
-- Find: `a.find("o")`
-- Replace: `a.replace("o", "O")`
-- Split: `a.split(" ")`
+```python
+Marks = int(input("How many marks did you get? "))
 
-#### 📋 List Operators:
-- Concatenation of lists: `a + b`
+if Marks >= 90:
+    print(f"You are in A+ Grade. You got {Marks} marks.")
+elif Marks < 40:
+    print(f"You failed because you got only {Marks} marks.")
+else:
+    print(f"You passed with {Marks} marks.")
 
-#### 📦 Tuple Operators:
-- Concatenation of tuples: `a + b`
 
-#### 🧾 Dictionary Operators:
-- Merging dictionaries: `{**a, **b}`
+- List operations
 
-#### 🔁 Set Operators:
-- Union of sets: `a | b`
+marks = [14, 45, 12, 78, 90, 100, 23, 56, 67, 89]
+
+marks.sort()
+print(marks)
+
+marks.append(100)
+print(marks)
+
+marks.pop()
+print(marks)
+
+
+collection = ["vikas", "kumain", "chand", "raj", "suresh", "kumar"]
+
+print(collection)
+
+collection[2] = "rajkumar"
+print(collection)
+
+collection[0] = "vikas kumar"
+print(collection)
+
+print(collection[-5])  # Accessing element with negative index
+
+collection.reverse()
+print(collection)
+
+collection.sort()
+print(collection)
+
+collection.append("rajkumar")
+print(collection)
+
+collection.pop()
+print(collection)
+
+collection.remove("rajkumar")
+print(collection)
+
+collection.insert(2, "rajkumar")
+print(collection)
+
+collection.clear()
+print(collection)
+
+collection.extend(["rajkumar", "suresh"])
+print(collection)
+
+collection.count("rajkumar")
+
+- String properties
+
+string = "vikas kumar"
+
+print(string[-4])  # Accessing character by index
+
+# string[0] = "V"  # ❌ Error: strings are immutable
+
+print("Strings are immutable. You cannot change characters directly.")
+
+
+
+# 📦 Python Tuples: Examples and Common Methods
+
+This section provides a clear explanation of **Python Tuples**, their usage, and available methods.
 
 ---
 
-## 🧪 How to Run the Script
+## 🔹 What is a Tuple?
 
-Make sure Python is installed on your system. To run the script, use the command below:
+- A **tuple** is an ordered, immutable collection of elements.
+- Tuples are defined using **parentheses `()`**.
+- Once a tuple is created, its values **cannot be changed**.
 
-```bash
-python python_day_02.py
+---
+
+## ✅ Creating and Using a Tuple
+
+```python
+# Creating a tuple
+names = ("vikas", "kumain", "chand", "raj", "suresh", "kumar")
+
+# Accessing elements
+print("Full tuple:", names)
+print("Element at index 2:", names[2])      # Output: chand
+print("Last element (negative index):", names[-1])  # Output: kumar
+
+# Length of the tuple
+print("Length:", len(names))
+
+
+👨‍💻 Author Vikas kumain 
