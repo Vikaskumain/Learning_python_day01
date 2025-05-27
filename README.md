@@ -1,38 +1,49 @@
-# 🐍 Python day03 Input and Escape Sequences Demo
+# 🐍 Python Function Practice and File Handling
 
-This Python script demonstrates:
-
-- Taking user input
-- Basic string operations
-- Type conversion
-- String concatenation
-- Extensive use of **escape sequence characters**
-
-It’s ideal for beginners learning how Python handles strings and special characters.
+This project demonstrates basic Python function usage, calculating sums and averages, checking for odd/even numbers, and reading Excel files using `pandas`.
 
 ---
 
-## 📄 File: `escape_sequence_demo.py`
+## 📘 Contents
 
-### 🧾 Features Covered
+### 🔹 1. Sum of Two Numbers
 
-| Escape       | Name             | Description                                             | Example Output                            |
-| ------------ | ---------------- | ------------------------------------------------------- | ----------------------------------------- |
-| `\\`         | Backslash        | Inserts a backslash (`\`)                               | `Hello \\World` → `Hello \World`          |
-| `\'`         | Single Quote     | Inserts a single quote                                  | `It\'s OK` → `It's OK`                    |
-| `\"`         | Double Quote     | Inserts a double quote                                  | `He said \"Hello\"` → `He said "Hello"`   |
-| `\n`         | Newline          | Moves to the next line                                  | `Hello\nWorld` → `Hello`<br>`World`       |
-| `\t`         | Horizontal Tab   | Inserts a tab space                                     | `Hello\tWorld` → `Hello    World`         |
-| `\r`         | Carriage Return  | Moves cursor to beginning of the line (overwrites text) | `Hello\rWorld` → `World`                  |
-| `\b`         | Backspace        | Deletes the character before it                         | `Helloo\bWorld` → `HelloWorld`            |
-| `\f`         | Form Feed        | New page feed (used in printing)                        | `Hello\fWorld` → Output depends on system |
-| `\v`         | Vertical Tab     | Vertical space/tab                                      | `Hello\vWorld` → Output may vary          |
-| `\a`         | Bell / Alert     | Triggers a system beep                                  | `Hello\aWorld` → System beep              |
-| `\0`         | Null Character   | Represents null character                               | Used internally in strings                |
-| `\ooo`       | Octal Value      | Character represented by octal number `ooo`             | `\101` → `A`                              |
-| `\xhh`       | Hex Value        | Character represented by hexadecimal `hh`               | `\x41` → `A`                              |
-| `\uXXXX`     | Unicode (16-bit) | Unicode character using 4-digit hex                     | `\u0041` → `A`                            |
-| `\UXXXXXXXX` | Unicode (32-bit) | Unicode using 8-digit hex                               | `\U0001F600` → 😀                         |
-| `\N{name}`   | Unicode by Name  | Unicode character by descriptive name                   | `\N{grinning face}` → 😀                  |
+```python
+def sum_val(a, b):
+    sum = a + b
+    return sum
+
+result = sum_val(10, 20)
+print(result)  # Output: 30
+
+###  A basic function that prints a greeting.
+
+def vikas():
+    print("hello vikas")
+
+vikas()
 
 
+
+def avrage(a, b, c, d):
+    sum = a + b + c + d
+    avrage = sum / 4
+    print("The average of the numbers is", avrage)
+    return avrage
+
+result = avrage(10, 20, 30122, 30)
+print(result)
+
+
+
+###  This function takes four numbers, calculates their average, prints it, and returns the result.
+
+
+# def odd_even():
+#     num = int(input("Enter the number: "))
+#     if num % 2 == 0:
+#         print("The number is even")
+#     else:
+#         print("The number is odd")
+#
+# odd_even()
